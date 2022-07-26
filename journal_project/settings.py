@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users', # linking custom user model
+    'entry', # linking to entry app
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,22 @@
+<!-- templates/entry_list.html -->
+{% extends 'base.html' %}
+
+{% block title %}Entries{% endblock %}
+
+{% block content %}
+{% for entry in object_list %}
+    <div class="card">
+        <div class="card-header">
+            <span class"font-weight-bold">{{ entry.title }}</span> &middot;
+            <span class="text-muted">by {{ entry.author }} | {{ entry.date }}</span>
+        </div>
+        <div class="card-body">
+            {{ entry.body }}
+        </div>
+        <div class="card-footer text-center text-muted">
+            <a href="#">Edit</a> | <a href="#">Delete</a>
+        </div>
+    </div>
+    <br />
+{% endfor %}
+{% endblock content %}

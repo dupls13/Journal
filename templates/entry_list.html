@@ -14,7 +14,8 @@
             {{ entry.body }}
         </div>
         <div class="card-footer text-center text-muted">
-            <a href="#">Edit</a> | <a href="#">Delete</a>
+            <a href="{% url 'entry_edit' entry.pk %}">Edit</a> |
+            <a href="{% url 'entry_delete' entry.pk %}">Delete</a>
         </div>
     </div>
     <br />

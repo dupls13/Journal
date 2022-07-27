@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users', # linking custom user model
     'entry', # linking to entry app
+    'page', # main page
 ]
 
 MIDDLEWARE = [
